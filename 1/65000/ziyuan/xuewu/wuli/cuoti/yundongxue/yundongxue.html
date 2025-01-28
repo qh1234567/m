@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>运动学</title>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            TeX: {
+              equationNumbers: {
+                autoNumber: "AMS"
+              }
+            },
+            extensions: ["tex2jax.js"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+            tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            processEscapes: true,
+            "HTML-CSS": { fonts: ["TeX"] }
+          }
+        });
+        MathJax.Hub.Register.MessageHook("Math Processing Error",function (message) {
+              alert("Math Processing Error: "+message[1]);
+            });
+        MathJax.Hub.Register.MessageHook("TeX Jax - parse error",function (message) {
+              alert("Math Processing Error: "+message[1]);
+            });
+      </script>
+      <script
+        type="text/javascript"
+        async
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"
+      ></script>
+      <style>
+        body {
+          background-color:liner-gradient(135deg,white,skyblue) ;
+        }
+        .block {
+          background-color:rgba(244,182,400,0.7);
+          width: 1000px;
+          margin: 0 auto;
+          border-radius: 10%;
+        }
+        </style>
+</head>
+<body>
+    <h1>欢迎来到运动学的错题本，都是血汗呐~ </h1>
+    <div>运动学是整个物理体系中非常基础的一环，同时也是在考试相当恶心的一块内容，选择题中通常会以1~2道主考，3~4道顺带的形式出题，大题中一般出现在第二道 <br>运动学在大题中难度一般不会很高，但是基本上以恶心著称，一般都要进行非常复杂且持久的运算，需要有极高的耐力和耐心~</div>
+    <a href="yundongxuecuoti.docx">【下载】</a>
+    <div>正文开始：</div>
+    <br><br><br>
+    <div class="block">
+        <strong style="color:green">T1</strong><i style="color:purple">金考卷</i>
+        <div>如图所示，传送带AB长为L=4m，其左右两侧为与传送带紧邻的等高水平面，右侧平面BC长s=3.75m，左侧足够长。质量分别为0.4kg和0.2kg的甲、乙两物块（均可视为质点）紧靠B点静置在右侧的水平面上，两物块间锁定一原长可以忽略的轻质弹簧，开始时弹簧处于压缩状态。在C点右侧有半径R=0.7m且与BC平滑链接的光滑竖直半圆弧轨道CEF，在圆弧的最高点F处有一固定挡板，物块撞上挡板后被原速率弹回。已知两物块与传送带和左右两侧水平面之间的动摩擦因数均为$\mu=0.2$，传送带以速度v沿顺时针匀速转动，$g=10m/s^2$。某一时刻弹簧解除锁定，两物块弹开后甲刚好能从A点离开传送带，甲乙运动过程中所涉及的碰撞均为弹性碰撞且碰撞时间极短。求：</div>
+        <div>（1）物块乙被弹簧弹开时的速度大小；</div>
+        <div>（2）乙首次到达圆弧轨道最高点F时对轨道的作用力大小</div>
+        <div>（3）甲、乙两物块最后均静止时，相距的距离d与传送带的速度$v(v\ne 0)$之间的关系</div>
+        <div ><img src="img/1.jpg" alt="网络出现问题，图片加载不出来~" width="200px" height=auto ></div>
+        <div style="color:red">【解析】：</div>
+        <div>（1）$\begin{cases}0-v_甲^2=-2\mu gL\\m_乙v_乙=m_甲v_甲\end{cases}\Longrightarrow\begin{cases}v_甲=\color{red}{4m/s}\\v_乙=\color{red}{8m/s}\end{cases}$</div>
+        <div>（2）$\begin{cases}\frac{1}{2}mv_F^2-\frac{1}{2}mv_乙^2=-mg2R-\mu mgs\\F_N+mg=m\frac{v_F^2}{R}\end{cases}\Longrightarrow\begin{cases}v_F=\sqrt{21}m/s\\F_N=4N\end{cases}\Longrightarrow 由牛三得,F_N'=4N$</div>
+        <div>（3）$最大摩擦量：v_F^2-o=2\mu gL_max\Longrightarrow L_max=16m&lt;L+2s$ <br>$\therefore 乙一定会与甲发生撞击$ <br>$\begin{cases}\frac{1}{2}mv_A^2-\frac{1}{2}mv_乙^2=-\mu mg(L+2s)\\\begin{cases}v_甲'=\frac{2m_乙}{m_甲+m_乙}v_A\\v_乙'=\frac{m_甲-m_乙}{m_甲+m_乙}v_A\end{cases}\end{cases}\Longrightarrow \begin{cases}v_A=3\sqrt{2}m/s\\v_甲'=2\sqrt{2}m/s\\v_乙’=-\sqrt{2}m/s\end{cases}$ <br>$\begin{cases}甲：v_甲'^2-0=2\mu gL'\Longrightarrow L'=2m\\乙：\begin{cases}全力加速：v_B'^2-v_c'^2=2\mu gL\\提前匀速：v_B=v\end{cases}\Longrightarrow \begin{cases}v_B'=3\sqrt{2}m/s(v&gt;\sqrt{2}m/s)\\v_B'=v(0&lt;v&lt;3\sqrt{2}m/s)\end{cases}\end{cases}$ <br>$判断：v_{B_{max}}'=3\sqrt{2}m/s时，v_B'^2&lt;\mu g(2L)\Longrightarrow \Delta L=3m\therefore乙不可能再上传送带$ <br>$乙通过第一段BC:v_B'^2=2\mu gL\Longrightarrow v_B'=\sqrt{15}m/s$ <br>$\therefore 当3\sqrt{2}m/s&gt;v&gt;\sqrt{15}m/s时，v_B'^2=2\mu gL\Longrightarrow \Delta L=7.5-\frac{v^2}{4}$ <br>$&nbsp;&nbsp;&nbsp;&nbsp;当0&lt;v&lt;\sqrt{15}m/s时，v_B'^2=2\mu gL\Longrightarrow \Delta L=\frac{v^2}{4}$ <br>$d=\Delta L+L'+L_传$ <br>综上：$\begin{cases}d=\color{red}{(\frac{v^2}{4}+6)m}[0&lt;v&lt;\sqrt{15}m/s]\\d=\color{red}{(13.5-\frac{v^2}{4})m}[\sqrt{15}m/s&lt;v&lt;3\sqrt{2}m/s]\\d=\color{red}{9m}[v&gt;3\sqrt{2}m/s]\end{cases}$</div>
+    </div>
+</body>
+</html>
