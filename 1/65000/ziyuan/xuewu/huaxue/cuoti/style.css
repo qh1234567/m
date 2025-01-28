@@ -1,0 +1,45 @@
+/* 修改后的粉红色主题 */
+/* 仅替换颜色变量，其他样式保持不变 */
+
+/* 基础重置 */
+* {
+    /* ...其他不变... */
+  }
+  
+  body {
+    /* ...其他不变... */
+    background: #fff0f5; /* 浅粉背景 */
+  }
+  
+  /* 容器 */
+  .container {
+    /* ...其他不变... */
+    background: #fff;
+    box-shadow: 0 2px 15px rgba(255,182,193,0.2); /* 浅粉阴影 */
+  }
+  
+  /* 导航栏 */
+  .navbar {
+    background: #db7093; /* 粉紫色 */
+  }
+  
+  /* 标题层级 */
+  h1 {
+    color: #c71585; /* 深品红 */
+    border-bottom-color: #ff69b4; /* 亮粉色 */
+  }
+  
+  h2 {
+    color: #ff1493; /* 深粉色 */
+  }
+  
+  /* 资源列表 */
+  .resource-list li {
+    border-left-color: #ff69b4; /* 亮粉色 */
+  }
+  
+  .resource-list a {
+    color: #ff69b4; /* 亮粉色链接 */
+  }
+  
+  /* 响应式设计部分保持不变 */
