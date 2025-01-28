@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>千鹤少年</title>
+  <link rel="stylesheet" href="normal.css">
+</head>
+<body>
+  <header>
+    <a href="#" class="logo">QH</a>
+    <ul>
+      <li><a href="https://buzhiyupianai.neocities.org/index.html" class="active">Home</a></li>
+      <li><a href="daohang/daohang.html"> </a></li>
+      <li><a href="#"> </a></li>
+      <li><a href="#"> </a></li>
+    </ul>
+  </header>
+  <section>
+    <img src="image/stars.png" id="stars">
+    <img src="image/moon.png" id="moon">
+    <img src="image/mountains_behind.png" id="mountains_behind">
+    <h2 id="text">一只千纸鹤</h2>
+    <a href="1/index.html" id="btn">Enter</a>
+    <img src="image/mountains_front.png" id="mountains_front">
+  </section>
+  <div class="sec" id="sec">
+    <h2>Introduction</h2>
+    <p>
+      不止于偏爱是活跃于5v5公平竞技类MOBA手游王者荣耀的民间玩家组织，在游戏中的战队ID同名。作为小规模的玩家集群，我们常常相互交流游戏心得，分享生活乐趣，并且努力促进彼此的成长，欢迎加入我们~
+    </p>
+  </div>
+
+  <script>
+    let stars = document.getElementById('stars')
+    let moon = document.getElementById('moon')
+    let mountains_behind = document.getElementById('mountains_behind')
+    let text = document.getElementById('text')
+    let btn = document.getElementById('btn')
+    let mountains_front = document.getElementById('mountains_front')
+    let header = document.querySelector('header')
+
+    window.addEventListener('scroll', function(){
+      let value = window.scrollY;
+      stars.style.left = value * 0.25 + 'px'
+      moon.style.top = value * 1.05 + 'px'
+      mountains_behind.style.top = value * 0.5 + 'px'
+      mountains_front.style.top = value * 0 + 'px'
+      text.style.marginRight = value * 4 + 'px'
+      text.style.marginTop = value * 1.5 + 'px'
+      btn.style.marginTop = value * 1.5 + 'px'
+      header.style.top = value * 0.5 + 'px'
+    })
+  </script>
+  <script src="https://unpkg.com/smoothscroll-polyfill@1.0.4/dist/smoothscroll-polyfill.min.js"></script>
+  <script>
+    // Polyfill初始化
+    smoothscroll.polyfill();
+  </script>
+</body>
+</html>
