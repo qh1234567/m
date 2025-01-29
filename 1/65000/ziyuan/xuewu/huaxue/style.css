@@ -3,23 +3,34 @@
 
 /* 基础重置 */
 * {
-    /* ...其他不变... */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, sans-serif;
   }
   
   body {
-    /* ...其他不变... */
+    line-height: 1.6;
+    color: #333;
+    padding-top: 60px; /* 为导航栏留空间 */
     background: #fff0f5; /* 浅粉背景 */
   }
   
   /* 容器 */
   .container {
-    /* ...其他不变... */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
     background: #fff;
     box-shadow: 0 2px 15px rgba(255,182,193,0.2); /* 浅粉阴影 */
+    border-radius: 8px;
   }
   
   /* 导航栏 */
   .navbar {
+    text-decoration: none;
+    margin-right: 2rem;
+    transition: opacity 0.3s;
     background: #db7093; /* 粉紫色 */
   }
   
@@ -27,19 +38,48 @@
   h1 {
     color: #c71585; /* 深品红 */
     border-bottom-color: #ff69b4; /* 亮粉色 */
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
   }
   
   h2 {
     color: #ff1493; /* 深粉色 */
+    font-size: 2rem;
+    margin: 1.5rem 0;
   }
   
   /* 资源列表 */
+  .resource-list {
+    list-style: none;
+    padding-left: 1.5rem;
+  }
   .resource-list li {
+    margin: 1rem 0;
+    padding: 1rem;
+    background: #f8f9fa;
     border-left-color: #ff69b4; /* 亮粉色 */
+    border-radius: 4px;
   }
   
   .resource-list a {
     color: #ff69b4; /* 亮粉色链接 */
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .resource-list a:hover {
+    text-decoration: underline;
   }
   
+  /* 响应式设计 */
+  @media (max-width: 768px) {
+    .container {
+      margin: 1rem;
+      padding: 1rem;
+    }
+    
+    h1 {
+      font-size: 2rem;
+    }
+}
   /* 响应式设计部分保持不变 */
